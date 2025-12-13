@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Store</title>
+  <link rel="stylesheet" href="c.css" />
+  <script src="s.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="image/logo.png" alt="Book Store Logo" />
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#arrivals">Arrivals</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-icons">
+    <a href="#" class="icon-link">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+      </svg>
+    </a>
+
+    <a href="#" class="icon-link">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+    </a>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>WELCOME TO<br><span>BOOK STORE</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias atque laborum non fuga ex deserunt. Exercitationem velit ducimus praesentium, obcaecati hic voluptate id tenetur fuga illum quidem omnis? Rerum?</p>
+    <button class="btn">Learn More</button>
+  </div>
+  <div class="hero-books">
+    <img src="image/table.png" alt="Book Display" />
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="1" y="3" width="15" height="13"></rect>
+        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+      </svg>
+    </div>
+    <h3>Fast Delivery</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+      </svg>
+    </div>
+    <h3>24 x 7 Services</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+      </svg>
+    </div>
+    <h3>Best Deal</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+      </svg>
+    </div>
+    <h3>Secure Payment</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="image/about.png" alt="About Us" />
+  </div>
+  <div class="about-content">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus repudiandae dignissimos molestias magni. Doloremque, quaerat illo excepturi fugit aspernatur nobis quam mollitia adipisci. Mollitia repellat illum doloremque illo rem alias pariatur incidunt dolorem laudantium blanditiis dolorum veniam perferendis similique.</p>
+    <button class="btn">Read More</button>
+  </div>
+</section>
+
+<section class="featured-books" id="featured">
+  <h2 class="section-title">Featured Books</h2>
+  <div class="books-display-container">
+    <div class="books-carousel">
+      <div class="book-card"><img src="image/book_1.jpg" alt="Book 1" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_2.jpg" alt="Book 2" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_3.jpg" alt="Book 3" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_4.jpg" alt="Book 4" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_5.jpg" alt="Book 5" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_6.jpg" alt="Book 6" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_7.png" alt="Book 7" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_8.png" alt="Book 8" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_9.jpg" alt="Book 9" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+      <div class="book-card"><img src="image/book_10.png" alt="Book 10" /><h4>Featured Books</h4><p class="author">John Deo</p><p class="genre">Thriller, Horror, Romance</p><p class="price">$25.50 <del>$28.60</del></p><button class="btn">Learn More</button></div>
+    </div>
+  </div>
+
+  <div class="carousel-progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+</section>
+
+<section class="new-arrivals" id="arrivals">
+  <h2 class="section-title">New Arrivals</h2>
+  <div class="arrivals-grid">
+    <div class="arrival-card"><img src="image/arrival_1.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_2.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_3.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_4.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_5.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_6.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_7.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_8.webp" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_9.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+    <div class="arrival-card"><img src="image/arrival_10.jpg" alt="New Book" /><div class="stars">★★★★★</div><button class="btn">Learn More</button></div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <h2 class="section-title">Reviews</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="image/review_1.png" alt="Reviewer" />
+        <div class="reviewer-info">
+          <h4>John Doe</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate exercitationem quis molestias neque ratione mollitia ipsum facere ratione dolorem neque.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="image/review_2.png" alt="Reviewer" />
+        <div class="reviewer-info">
+          <h4>John Doe</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate exercitationem quis molestias neque ratione mollitia ipsum facere ratione dolorem neque.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="image/review_3.png" alt="Reviewer" />
+        <div class="reviewer-info">
+          <h4>John Doe</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate exercitationem quis molestias neque ratione mollitia ipsum facere ratione dolorem neque.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="reviewer">
+        <img src="image/review_4.png" alt="Reviewer" />
+        <div class="reviewer-info">
+          <h4>John Doe</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate exercitationem quis molestias neque ratione mollitia ipsum facere ratione dolorem neque.</p>
+    </div>
+  </div>
+</section>
+
+<section class="digital-banner" style="position: relative;">
+  <img src="image/banner.jpg" alt="Digital Banner" style="width: 100%; display: block;" />
+  <div class="digital-content-wrapper" style="position: absolute; top: 50%; left: 10%; transform: translateY(-50%);">
+    <br><br><br><br><br>
+    <button class="btn">Learn More</button>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <h2 class="section-title">Our Blog</h2>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="image/blog_1.jpg" alt="Blog Post" />
+      <div class="blog-content">
+        <h4>Blogger</h4>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium voluptatibus error quidem expedita voluptatem ipsum facere veritatis dignissimos pariatur nostrum perferendis consequuntur.</p>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="image/blog_2.jpg" alt="Blog Post" />
+      <div class="blog-content">
+        <h4>Blogger</h4>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium voluptatibus error quidem expedita voluptatem ipsum facere veritatis dignissimos pariatur nostrum perferendis consequuntur.</p>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="image/blog_3.jpg" alt="Blog Post" />
+      <div class="blog-content">
+        <h4>Blogger</h4>
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium voluptatibus error quidem expedita voluptatem ipsum facere veritatis dignissimos pariatur nostrum perferendis consequuntur.</p>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section company-info">
+      <div class="logo">
+        <img src="image/logo.png" alt="Book Store Logo" />
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ipsa aspernatur ad sequi dolore eveniet vitae quasi. Excepturi ipsa odio impedit sequi at hic velit, minus vero sint. Voluptas?</p>
+      <div class="designer-mobile-view">
+        <p>Design By <span>MIT Master Code</span></p>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Link</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#arrivals">Arrivals</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h3>Contact Info</h3>
+      <p><span>📞</span> +94 12 345 6789</p>
+      <p><span>📞</span> +94 32 444 699</p>
+      <p><span>📧</span> bookstore123@gmail.com</p>
+    </div>
+
+    <div class="footer-section social-follow">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1a10.66 10.66 0 0 1-8-4 4.8 4.8 0 0 0-.5 2.4c0 1.59.83 3.73 2.5 4.71a4.85 4.85 0 0 1-2.2-.6c0 1.63 1.15 3.19 2.65 3.53a4.77 4.77 0 0 1-2.07.08 4.97 4.97 0 0 0 4.6 3.44A9.98 9.98 0 0 1 1 20.3c-.65 0-1.3-.07-1.95-.2v-.2a14 14 0 0 0 7.5 2.2c9 0 13.9-7.5 13.9-13.9v-.5c.78-.56 1.44-1.25 1.97-2.05z"/></svg></a>
+        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Newsletter</h3>
+      <div class="newsletter-form">
+        <input type="email" placeholder="You email here" class="email-input" />
+        <button class="btn subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Design By <span>MIT Master Code</span></p>
+  </div>
+</footer>
+
+</body>
+</html>

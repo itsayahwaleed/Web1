@@ -1,0 +1,1008 @@
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header - Sticky */
+header {
+    background: #fff;
+    padding: 15px 8%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.header-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon-link {
+    color: #333;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.icon-link:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    padding: 150px 8% 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 80px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.hero-content h1 span {
+    color: #00bcd4;
+}
+
+.hero-content p {
+    max-width: 500px;
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #0097a7;
+    transform: translateY(-2px);
+}
+
+.hero-books {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-books img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Features */
+.features {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background: #fff;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.feature-card:hover {
+    border-color: #00bcd4;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,188,212,0.1);
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-icon svg {
+    color: #00bcd4;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: #f8f9fa;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Featured Books - Carousel */
+.featured-books {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.books-display-container {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.books-carousel {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.books-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.book-card {
+    min-width: calc(20% - 20px);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e9ecef; 
+    border-radius: 8px;
+    transition: all 0.3s;
+    background: #fff;
+    flex-shrink: 0; 
+    scroll-snap-align: start; 
+}
+
+.book-card:hover {
+    border-color: #00bcd4;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.book-card h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.book-card .author {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.book-card .genre {
+    font-size: 12px;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.book-card .price {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.book-card .price del {
+    color: #999;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.book-card .btn {
+    padding: 8px 25px;
+    font-size: 12px;
+}
+
+.carousel-progress {
+    width: 250px; 
+    height: 4px;
+    background: #e9ecef;
+    margin: 30px auto 0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #00bcd4;
+    width: 0;
+    transition: transform 0.3s ease;
+    transform-origin: left; 
+    border-radius: 2px;
+}
+
+/* --- New Arrivals (تعديل الإطار التركوازي عند Hover) --- */
+.new-arrivals {
+    padding: 80px 8%;
+    background: #f8f9fa;
+}
+
+.arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.arrival-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s;
+    /* إطار شفاف لتهيئة اللون (سمك 2px مطلوب) */
+    border: 2px solid transparent; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* التعديل لتطبيق الإطار التركوازي عند المرور */
+.arrival-card:hover {
+    transform: translateY(-10px);
+    border-color: #00bcd4; /* اللون التركوازي */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.arrival-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #ffd700;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.arrival-card .btn {
+    padding: 8px 25px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Reviews */
+.reviews {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    padding: 30px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: all 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reviewer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.reviewer-info .stars {
+    margin: 0;
+}
+
+.review-card p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* --- Digital Book Banner (مثل الصورة) --- */
+.digital-banner {
+    background-color: #79c7e8;
+    background-image: url('image/banner.jpg'); /* نفس فولدر الصور عندك */
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+/* مكان الزر فوق الجزء اليسار من الصورة */
+.digital-content-wrapper {
+    position: absolute;
+    left: 8%;
+    bottom: 80px;   /* عدلي الرقم لو تبينه أعلى/أقرب لأسفل */
+}
+
+.digital-banner .btn {
+    background: #00a090;
+    padding: 12px 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.digital-banner .btn:hover {
+    background: #008577;
+}
+
+/* Blog Section */
+.blog {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 30px;
+}
+
+.blog-content h4 {
+    color: #00bcd4;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.blog-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.blog-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.blog-content .btn {
+    padding: 8px 25px;
+    font-size: 12px;
+}
+
+/* --- Footer --- */
+footer {
+    background: #ebebeb;
+    padding: 60px 8% 20px;
+    color: #333;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* تعديل لتقسيم محتوى الفوتر لـ 4 أعمدة بناءً على HTML */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00bcd4;
+    padding-left: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #dcdcdc;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.newsletter .btn {
+    padding: 10px 20px;
+    background: #00a896;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* تم تعديل الزر من 20px إلى 5px ليتطابق مع باقي الأزرار */
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.newsletter .btn:hover {
+    background: #008f7e;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #00bcd4;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer {
+    /* تغيير لون الخلفية للون الرصاصي الفاتح جدًا المطابق للصورة */
+    background: #f0f0f0; 
+    padding: 60px 8% 0; /* إزالة البادينج السفلي من الجزء الرئيسي */
+    color: #333;
+}
+
+.footer-content {
+    /* تغيير التقسيم إلى 5 أعمدة ليناسب التصميم الجديد */
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr); 
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* تنسيق قسم معلومات الشركة (العامود الأول) */
+.footer-section.company-info {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 90%; /* للتحكم في عرض النص الطويل */
+}
+
+.footer-section.company-info .logo img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* تنسيق الروابط */
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00a090; /* لون تركوازي داكن Hover */
+    padding-left: 5px;
+}
+
+/* تنسيق معلومات الاتصال (العامود الثالث) */
+.footer-section.contact-info p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* تعديل الأيقونات إن استخدمت رموز SVG أو الأرقام هنا */
+.footer-section.contact-info p span { 
+    color: #00bcd4; /* لون الأيقونات */
+    font-size: 16px;
+}
+
+/* تنسيق Follow Us (العامود الرابع) */
+.footer-section.social-follow .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section.social-follow .social-icons a {
+    /* إزالة الخلفية الدائرية واستبدالها بنمط الأيقونات المباشر المطابق للصورة */
+    width: auto;
+    height: auto;
+    background: none;
+    color: #000; /* لون الأيقونات أسود */
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    border-radius: 0;
+    margin-right: 0;
+    transition: color 0.3s;
+}
+
+.footer-section.social-follow .social-icons a:hover {
+    color: #00bcd4; /* لون الأيقونات عند Hover */
+}
+
+/* تنسيق Newsletter (العامود الخامس) */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter .email-input {
+    width: 100%;
+    /* لون الخلفية فاتح جدًا مطابق للصورة */
+    background: #e5e5e5; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px; /* شكل بيضاوي */
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter .subscribe-btn {
+    padding: 10px 20px;
+    background: #00bcd4; /* لون الزر التركوازي */
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: 500;
+    width: fit-content; 
+    transition: 0.3s;
+}
+
+.newsletter .subscribe-btn:hover {
+    background: #0097a7;
+}
+
+
+/* --- الشريط السفلي (Design By MIT Master Code) --- */
+.footer-bottom {
+    text-align: right; /* محاذاة النص لليمين */
+    padding: 20px 0;
+    border-top: 1px solid #d4d4d4; /* خط فاصل أغمق قليلاً */
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #555;
+    margin: 0; /* إزالة الهوامش الزائدة */
+}
+
+.footer-bottom p span {
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+.designer-mobile-view {
+    /* إخفاء هذا القسم في العرض المكتبي */
+    display: none; 
+}
+
+/* --- Responsive Design (للتأكد من عرضه بشكل صحيح على الجوال) --- */
+@media (max-width: 992px) {
+    .footer-content { 
+        /* تقسيم إلى 3 أعمدة في الشاشات المتوسطة */
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .footer-section.company-info {
+        grid-column: 1 / 4; /* جعل قسم الشركة يأخذ العرض بالكامل */
+        max-width: 100%;
+    }
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content { 
+        /* تقسيم إلى عمودين في الشاشات الصغيرة */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .footer-section.company-info {
+        grid-column: 1 / 3; 
+    }
+    .footer-section.newsletter {
+        grid-column: 1 / 3; /* جعل قسم النشرة البريدية يأخذ العرض بالكامل */
+    }
+    .designer-mobile-view {
+        /* إظهار معلومات المصمم داخل قسم الشركة في الجوال */
+        display: block; 
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-bottom {
+        display: none; /* إخفاء الشريط السفلي المكرر في الجوال */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .footer-content { grid-template-columns: repeat(3, 1fr); }
+    .book-card { min-width: calc(20% - 20px); flex-shrink: 0; }
+    .arrivals-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 992px) {
+    .hero { flex-direction: column; text-align: center; }
+    .about { flex-direction: column; }
+    .features { grid-template-columns: repeat(2, 1fr); }
+    .book-card { min-width: calc(33.333% - 20px); }
+    .arrivals-grid { grid-template-columns: repeat(3, 1fr); }
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-content { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* هذا الكود للجوال فقط */
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: repeat(1, 1fr); /* عمود واحد في الجوال */
+    }
+}
+.reviews-grid {
+    display: grid;
+    /* هذا السطر هو المسؤول عن جعلها 4 أعمدة متساوية */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* مسافة بين البطاقات */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul { gap: 1.5rem; }
+    .book-card { min-width: calc(50% - 20px); }
+    .arrivals-grid, .reviews-grid, .blog-grid, .features, .footer-content { grid-template-columns: 1fr; }
+    
+    .digital-banner {
+        height: 350px;
+        /* في الشاشات الصغيرة: محاذاة النص للوسط للحصول على أفضل عرض */
+        text-align: center; 
+        align-items: center;
+        background-position: center bottom;
+    }
+    .digital-content-wrapper {
+        max-width: 90%; 
+    }
+
+}
+/* ===== Buttons (Dark Mode & Mobile Menu) ===== */
+.theme-toggle,
+.menu-toggle {
+    border: none;
+    background: #f1f1f1;
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+    background: #e0e0e0;
+}
+
+/* زر المنيو يظهر فقط في الجوال */
+.menu-toggle {
+    display: none;
+}
+
+/* ===== Mobile Nav (إظهار / إخفاء القائمة) ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        background: #ffffff;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        display: none;
+        z-index: 999;
+    }
+
+    /* لما body يأخذ كلاس nav-open نعرض المنيو */
+    body.nav-open nav ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex; /* إظهار زر المنيو في الجوال */
+    }
+}
+
+/* ===== Dark Mode (body.dark) ===== */
+
+body.dark {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+/* الروابط والنص */
+body.dark a {
+    color: #e0e0e0;
+}
+
+body.dark a:hover {
+    color: #00bcd4;
+}
+
+/* الهيدر */
+body.dark header {
+    background: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+body.dark .icon-link {
+    color: #f5f5f5;
+}
+
+/* الخلفيات الأساسية للأقسام */
+body.dark .hero,
+body.dark .about,
+body.dark .new-arrivals,
+body.dark .featured-books,
+body.dark .reviews,
+body.dark .blog,
+body.dark footer {
+    background: #181818;
+    color: #f5f5f5;
+}
+
+/* الكروت */
+body.dark .feature-card,
+body.dark .book-card,
+body.dark .arrival-card,
+body.dark .review-card,
+body.dark .blog-card,
+body.dark .footer-section {
+    background: #222;
+    border-color: #333;
+    color: #f5f5f5;
+}
+
+body.dark .book-card p,
+body.dark .arrival-card p,
+body.dark .review-card p,
+body.dark .blog-card p,
+body.dark .footer-section p {
+    color: #ddd;
+}
+
+/* الأزرار في الوضع الداكن */
+body.dark .btn {
+    background: #00bcd4;
+    color: #fff;
+}
+
+body.dark .btn:hover {
+    background: #0097a7;
+}
+
+/* شريط الكاروسيل */
+body.dark .carousel-progress {
+    background: #333;
+}
+
+body.dark .progress-bar {
+    background: #00e5ff;
+}
+
+/* البانر */
+body.dark .digital-banner p {
+    color: #f1f1f1;
+}
+
+/* زر الداكن لوضعه مميز */
+body.dark .theme-toggle {
+    background: #333;
+    color: #ffeb3b;
+}
