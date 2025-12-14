@@ -71,6 +71,19 @@ nav a:hover {
 .icon-link:hover {
     color: #00bcd4;
 }
+.header-icons i{ font-size: 1.2rem; }
+.heart-icon i{ color: red; }
+
+.feature-icon i{ font-size: 3rem; }
+
+.digital-banner{ position: relative; }
+.banner-img{ width: 100%; display: block; }
+.digital-content{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
 
 /* Hero Section */
 
