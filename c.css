@@ -11,6 +11,8 @@ body {
     color: #333;
 }
 
+
+
 /* Header - Sticky */
 header {
     background: #fff;
@@ -71,6 +73,7 @@ nav a:hover {
 }
 
 /* Hero Section */
+
 .hero {
     background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
     padding: 150px 8% 60px;
